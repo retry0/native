@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card>
+  <ion-card-content>
+    <button ion-button full (click)="mendapatkanPosisi()"> Klik Saya Untuk mendapatkan lokasi</button>
+  <p> Position: {{coords}}</p>
+  <p> Accuracy : {{accuracy}}</p>
+  <p *ngIf="error">{{error}}</p>
+  </ion-card-content>
+</ion-card>
+</ion-content>
